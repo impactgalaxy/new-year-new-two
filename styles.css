@@ -1,0 +1,167 @@
+*, *::before, *::after{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+}
+header{
+    display: grid;
+    grid-template-columns: 50%;
+    height: 100vh;
+    justify-content: end;
+    float: right;
+    align-items: center;
+    background-image: url('./images/banner/banner2.png');
+    background-position: left center;
+    padding-right: 100px;
+}
+.header-box{
+    padding: 120px;
+    text-align: right;
+}
+.header-box h1{
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.header-box p{
+    margin-bottom: 15px;
+    color: #444343;
+}
+.header-box button{
+    padding: 18px 30px;
+    color: #fff;
+    background-color: #F15B22;
+    border: none;
+    border: 15px;
+    font-weight: 600;
+}
+.my-fail{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+}
+.my-failors-img{
+    height: 100%;
+    background-image: url('./images/person.png');
+    background-position: center center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+
+}
+.fail-div{
+    width: 90%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: aquamarine;
+    z-index: -1;
+}
+.my-failors-content{
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    padding: 50px;
+}
+.f-item{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.failors-content{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 15px;
+    padding: 10px;
+}
+.my-plans{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    justify-content: space-between;
+}
+.my-plan-hero{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.plan{
+    text-align: center;
+}
+.plan img{
+    margin-bottom: 15px;
+}
+.plan p{
+    color:#444343;
+}
+.always-positive{
+    width: 80%;
+    height: 200px;
+    background-image: linear-gradient(90deg, #F15B22, transparent), url('./images/watch.png');
+    display: grid;
+    align-items: center;
+    margin: 50px auto;
+}
+.positive{
+    padding-left: 50px;
+}
+.positive h1{
+    color: #fff;
+    margin-bottom: 15px;
+}
+.positive button{
+    padding: 18px 30px;
+    color: #F15B22;
+    background-color: #fff;
+    font-size: 21px;
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+}
+footer{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #151414;
+}
+.footer-left{
+    padding: 150px;
+}
+.footer-left p{
+    margin-bottom: 15px;
+    color: #8f8d8d;
+}
+.footer-right{
+    padding: 150px;
+}
+.icon img{
+    margin-right: 15px;
+}
+input[type='email']{
+    display: block;
+    font-size: 20px;
+    padding-left: 10px;
+    border: none;
+    height: 2em;
+    margin: 15px 0;
+}
+input[type='submit']{
+    padding: 18px 2em;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    margin-top: 15px;
+    background-color: #F15B22;
+    color: #fff;
+}
