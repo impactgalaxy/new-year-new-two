@@ -34,17 +34,17 @@ header{
     color: #fff;
     background-color: #F15B22;
     border: none;
-    border: 15px;
+    border-radius: 5px;
     font-weight: 600;
 }
-.my-fail{
+.my-failures{
     display: grid;
     grid-template-columns: 50% 50%;
     height: 100vh;
     width: 80%;
     margin: auto;
 }
-.my-failors-img{
+.my-failures-img{
     height: 100%;
     background-image: url('./images/person.png');
     background-position: center center;
@@ -56,14 +56,14 @@ header{
     padding: 50px;
 
 }
-.fail-div{
+.failures-div{
     width: 90%;
     height: 80%;
     border-radius: 50%;
     background-color: aquamarine;
     z-index: -1;
 }
-.my-failors-content{
+.my-failures-content{
     display: grid;
     grid-template-columns: auto;
     align-items: center;
@@ -75,7 +75,7 @@ header{
     font-size: 18px;
     margin-bottom: 10px;
 }
-.failors-content{
+.failures-content{
     display: grid;
     grid-template-columns: auto;
     row-gap: 15px;
@@ -85,7 +85,7 @@ header{
     display: grid;
     grid-template-columns: auto auto auto auto;
     width: 80%;
-    margin: 20px auto;
+    margin: 50px auto;
     padding: 10px;
     justify-content: space-between;
 }
@@ -94,7 +94,7 @@ header{
     grid-column-end: 5;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2em;
 }
 .plan{
     text-align: center;
@@ -135,14 +135,14 @@ footer{
     background-color: #151414;
 }
 .footer-left{
-    padding: 150px;
+    padding: 120px;
 }
 .footer-left p{
     margin-bottom: 15px;
     color: #8f8d8d;
 }
 .footer-right{
-    padding: 150px;
+    padding: 120px;
 }
 .icon img{
     margin-right: 15px;
@@ -164,4 +164,75 @@ input[type='submit']{
     margin-top: 15px;
     background-color: #F15B22;
     color: #fff;
+}
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 22px;
+    }
+    p{
+        font-size: 16px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    header{
+        padding: 10px;
+        height: 100%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-color: #bebebe;
+    }
+    .header-box{
+        padding: 10px;
+    }
+    .my-failures{
+        grid-template-columns: auto;
+        height: 100%;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .my-failures-img{
+        height: 300px;
+        background-size: 30%;
+        padding: 10px;
+    }
+    .failures-div{
+        height: 50%;
+        width: 30%;
+    }
+    .my-failures-content{
+        width: 100%;
+        padding: 30px;
+    }
+    .my-plans{
+        grid-template-columns: auto auto;
+        padding: 30px;
+        width: 100%;
+    }
+    .my-plan-hero{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .plan{
+        margin-bottom: 30px;
+    }
+    .always-positive{
+        width: 100%;
+        background-position: center center;
+        background-size: cover;
+    }
+    button{
+        font-size: 14px;
+    }
+    footer{
+        grid-template-columns: 1fr;
+    }
+    .footer-left, .footer-right{
+        padding: 20px;
+    }
+    .icon img{
+        width: 30px;
+        height: 30px;
+    }
 }
